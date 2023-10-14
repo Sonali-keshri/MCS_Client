@@ -4,6 +4,7 @@ import linkedin from "../assets/linkedin_logo.svg"
 import whatsapp from "../assets/whatsapp.svg"
 import facebook from "../assets/facebook.svg"
 import insta from "../assets/insta.svg"
+import { Link } from "react-router-dom"
 
 const Footer = () => {
   return (
@@ -34,24 +35,24 @@ const Footer = () => {
               <p>Forms</p>
             </div>
             <div>
-              <p className="font-bold">RESOURCES</p>
-              <p>Blogs</p>
-              <p>Forms</p>
+              <p className="font-bold">SUPPORT</p>
+              <p>Help</p>
+              <p>Contact Us</p>
             </div>
             <div>
-              <p className="font-bold">COMPANY</p>
-              <p>About</p>
-              <p>Pricing</p>
-              <p>Careers</p>
+              <p className="font-bold">LEGAL</p>
+              <p>Privacy</p>
+              <p>Terms</p>
+              <p>Accessibilty</p>
             </div>
           </div>
           <div className='flex md:flex-row flex-col justify-between gap-4 mt-8'>
             <p>Sambhaji Nagar, No2, St. Antony Road, Chembur, Mumbai - 400071, Maharashtra</p>
             <div className='flex lg:justify-between gap-4'>
-              <img src={facebook} alt="facebook" />
-              <img src={insta} alt="Instagram" />
-              <img src={linkedin} alt="linkedin" />
-              <img src={whatsapp} alt="Social" />
+              <Link to="https://www.facebook.com/" target="_blank">  <img src={facebook} alt="facebook" /> </Link>
+              <Link to="https://www.instagram.com/mohitetax_/" target="_blank">  <img src={insta} alt="Instagram" /> </Link>
+              <Link to="https://www.linkedin.com/" target="_blank">  <img src={linkedin} alt="linkedin" /> </Link>
+              <Link to="https://web.whatsapp.com/" target="_blank">  <img src={whatsapp} alt="Social" /> </Link>
             </div>
           </div>
         </div>
