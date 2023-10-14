@@ -3,13 +3,9 @@
 }
 .sm-navbar{
     background-image: url("./assets/Gradient_bg.svg");
-    animation: topDown .2s ease-in ;
-
 }
 .joinPage{
     background:url("./assets/home_bg.svg") no-repeat center;
-   
-
 }
 
 .footer > div:not(:first-child) > p{
@@ -56,14 +52,4 @@
 
 #sm-about:hover #sm-about-links{
     display: block;
-}
-
-@keyframes topDown {
-    0%{
-        height:50px;
-    }
- 
-    100%{
-        height: 700px;
-    }
 }
