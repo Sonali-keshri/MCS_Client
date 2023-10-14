@@ -43,7 +43,7 @@ const ChartedAccountantDetails = ({ data, loading }) => {
                     <p className='text-gray-400 text-base font-bold pb-4 '>SERVICES OFFERS</p>
                     <ul className='list-disc md:px-10 px-2 text-xl'>
                         {services.map(service =>(
-                            <li>{service}</li>
+                            <li key={service}>{service}</li>
                         ))}
                       
                     </ul>
@@ -52,7 +52,7 @@ const ChartedAccountantDetails = ({ data, loading }) => {
                     <p className='text-gray-400 text-base font-bold pb-4 '>WHY ME?</p>
                     <ul className='list-disc md:px-10 px-2 text-xl'>
                     {benefits.map(benifit =>(
-                            <li>{benifit}</li>
+                            <li key={benifit}>{benifit}</li>
                         ))}
                     </ul>
                 </div>

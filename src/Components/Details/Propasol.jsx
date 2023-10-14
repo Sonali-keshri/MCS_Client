@@ -8,11 +8,8 @@ import { api } from '../../utils/Api'
 const Propasol = () => {
  
   const { id } = useParams();
-  console.log("id:" , id)
 
   const {data, loading} = useFetch(api+"/"+id)
-  console.log(data)
-
 
   return (
     <div className='flex md:flex-row flex-col  lg:p-20 p-10 gap-16'>

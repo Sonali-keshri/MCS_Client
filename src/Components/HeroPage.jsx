@@ -10,12 +10,12 @@ const HeroPage = () => {
 
   const [searchTerm, setSearchTerm] = useState("")
 
-  const {data, loading} = useFetch(api)
+  const {rawData, data,setData, loading} = useFetch(api)
   console.log("data   :::" ,data)
 
   return (
     <div className='max-w-[1536px] '>
-      <MyContext.Provider value={{ searchTerm, setSearchTerm ,data,loading}}>
+      <MyContext.Provider value={{ searchTerm, setSearchTerm ,rawData,data,setData,loading}}>
         <Home />
         <Cards />
         <Features />
