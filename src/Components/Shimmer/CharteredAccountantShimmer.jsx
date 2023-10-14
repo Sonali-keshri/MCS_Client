@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ChartedAccountantShimmer = () => {
+const CharteredAccountantShimmer = () => {
     return (
         <div className='w-full p-6'>
             <div className='w-full h-[400px] bg-gray-300'></div>
@@ -20,4 +20,4 @@ const ChartedAccountantShimmer = () => {
     )
 }
 
-export default ChartedAccountantShimmer
+export default CharteredAccountantShimmer

@@ -1,16 +1,15 @@
 import React from 'react'
-import ChartedAccountantShimmer from '../Shimmer/ChartedAccountantShimmer'
+import CharteredAccountantShimmer from '../Shimmer/CharteredAccountantShimmer'
 
-const ChartedAccountantDetails = ({ data, loading }) => {
+const CharteredAccountantDetails = ({ data, loading }) => {
 
     if (loading) {
-        return <ChartedAccountantShimmer/>
+        return <CharteredAccountantShimmer/>
     }
     
     const {  image, about, } = data
 
     const {from,partnerSince,averageResponseTime,description,services,benefits} = about
-
 
     return (
         <div className='md:w-3/5 w-full'>
@@ -62,4 +61,4 @@ const ChartedAccountantDetails = ({ data, loading }) => {
     )
 }
 
-export default ChartedAccountantDetails
+export default CharteredAccountantDetails

@@ -12,7 +12,7 @@ const Header = () => {
     const [open, setOpen] = useState(false);
 
     return (
-        <nav className=' max-w-[1536px]  lg:px-20 lg:py-5 md:p-10 px-4 py-10 flex items-center justify-between navabr bg-white'>
+        <nav className=' max-w-[1536px]  lg:px-20 lg:py-5 md:p-10 px-4 py-6 flex items-center justify-between navabr bg-white'>
 
             <div className='flex relative gap-6 lg:w-auto w-full'>
                 <div className='logo flex justify-between w-full'>
