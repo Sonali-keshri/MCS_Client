@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import Logo from "../assets/logo_black.svg"
-import Button from "./Button"
 import { RiArrowDropDownLine } from "react-icons/ri"
 import { GiHamburgerMenu } from "react-icons/gi"
 import { AiOutlineClose } from "react-icons/ai"
@@ -92,12 +91,16 @@ const Header = () => {
                                 <li className='my-4 bg-slate-200 p-2'>Link 3</li>
                             </ul>
                         </li>
+                        <div className="flex flex-col gap-3  items-center">
+                            <button className='w-full text-[#0076CE] px-6 py-2 font-bold rounded-lg border border-[#0076CE] text-xl '>Login</button>
+                            <button className='w-full bg-[#0076CE] px-6 py-2 font-bold rounded-lg text-white text-xl '>Register</button>
+                        </div>
                     </ul>
                 }
             </div>
-            <div className="lg:flex gap-3 hidden">
-                <Button value={"Login"} outline={true} />
-                <Button value={"Register"} outline={false} />
+            <div className="lg:flex gap-3  items-center hidden">
+                <button className='text-[#0076CE] px-6 py-2 font-bold rounded-lg border border-[#0076CE] text-xl '>Login</button>
+                <button className='bg-[#0076CE] px-6 py-2 font-bold rounded-lg text-white text-xl '>Register</button>
             </div>
 
 
