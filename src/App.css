@@ -1,0 +1,58 @@
+.homePage{
+    background-image: url("./assets/Gradient_bg.svg");
+}
+.navabr,.sm-navbar{
+    background-image: url("./assets/Gradient_bg.svg");
+}
+.joinPage{
+    background:url("./assets/home_bg.svg") no-repeat center;
+   
+
+}
+
+.footer > div:not(:first-child) > p{
+    line-height: 2.4rem;
+} 
+
+.gradient-text {
+    background-image: linear-gradient(to right, #0076CE, #9400D3); 
+    -webkit-background-clip: text; 
+    color: transparent; 
+  }
+
+
+
+#solution:hover #solution-links{
+    display: block;
+}
+
+#features:hover #features-links{
+    display: block;
+}
+
+#about:hover #about-links{
+    display: block;
+}
+
+#sm-solution:hover{
+    height: 240px;
+}
+
+#sm-features:hover{
+    height: 240px;
+}
+#sm-about:hover{
+    height: 240px;
+}
+#sm-solution:hover #sm-solution-links{
+    display: block;
+}
+
+#sm-features:hover #sm-features-links{
+    display: block;
+}
+
+#sm-about:hover #sm-about-links{
+    display: block;
+}
+
