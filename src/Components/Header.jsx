@@ -61,7 +61,7 @@ const Header = () => {
                 {
                     open &&
                     <ul className='sm-navbar bg-white absolute top-20 h-[700px] w-full lg:hidden  flex flex-col gap-10 p-10 text-2xl font-bold' >
-                        <li className='relative' id='sm-solution' >
+                        <li className='relative delay-100' id='sm-solution' >
                             <div className='flex items-center'>Soulution
                                 <span><RiArrowDropDownLine /></span>
                             </div>
@@ -71,7 +71,7 @@ const Header = () => {
                                 <li className='my-4 bg-slate-200 p-2'>Link 3</li>
                             </ul>
                         </li>
-                        <li className='relative' id='sm-features'>
+                        <li className='relative delay-100' id='sm-features'>
                             <div className='flex items-center'>Features
                                 <span><RiArrowDropDownLine /></span>
                             </div>
