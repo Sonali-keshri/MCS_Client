@@ -1,10 +1,9 @@
 import React from 'react'
-import { useParams } from 'react-router-dom';
+
 
 const CardBody = ({item}) => {
 
-    const {id,name,image,intro,rating,about,price,taskComplexity,testimonial} = item
-    const { text,author} = testimonial
+    const {id,name,intro} = item
 
   return (
     <div className='shadow-xl p-6 rounded-xl relative mb-8 bg-white z-20 '>

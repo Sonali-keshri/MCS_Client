@@ -8,14 +8,13 @@ import useFetch from "../utils/useFetch"
 
 const HeroPage = () => {
 
-  const [searchTerm, setSearchTerm] = useState("")
-
+  // fetching data using Custom hook 
   const {rawData, data,setData, loading} = useFetch(api)
   console.log("data   :::" ,data)
 
   return (
     <div className='max-w-[1536px] '>
-      <MyContext.Provider value={{ searchTerm, setSearchTerm ,rawData,data,setData,loading}}>
+      <MyContext.Provider value={{ rawData,data,setData,loading}}>
         <Home />
         <Cards />
         <Features />

@@ -1,10 +1,8 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
-import { links } from "./links"
 import Logo from "../assets/logo_black.svg"
 import Button from "./Button"
 import { RiArrowDropDownLine } from "react-icons/ri"
-import { RiArrowDropUpLine } from "react-icons/ri"
 import { GiHamburgerMenu } from "react-icons/gi"
 import { AiOutlineClose } from "react-icons/ai"
 
@@ -14,7 +12,7 @@ const Header = () => {
     const [open, setOpen] = useState(false);
 
     return (
-        <nav className=' max-w-[1536px]  lg:px-20 md:p-10 px-4 py-10 flex items-center justify-between navabr bg-white'>
+        <nav className=' max-w-[1536px]  lg:px-20 lg:py-5 md:p-10 px-4 py-10 flex items-center justify-between navabr bg-white'>
 
             <div className='flex relative gap-6 lg:w-auto w-full'>
                 <div className='logo flex justify-between w-full'>

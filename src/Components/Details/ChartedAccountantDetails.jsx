@@ -3,11 +3,12 @@ import ChartedAccountantShimmer from '../Shimmer/ChartedAccountantShimmer'
 
 const ChartedAccountantDetails = ({ data, loading }) => {
 
-    if (data == null) {
+    if (loading) {
         return <ChartedAccountantShimmer/>
     }
-    const { name, image, intro, rating, reviewCount, about, price, taskComplexity, testimonial, deliveryTime } = data
-    const { text, author } = testimonial
+    
+    const {  image, about, } = data
+
     const {from,partnerSince,averageResponseTime,description,services,benefits} = about
 
 

@@ -6,10 +6,10 @@ import ProposalCardShimmer from '../Shimmer/ProposalCardShimmer'
 
 const ProposalCard = ({ data, loading }) => {
 
-    if (data == null) {
+    if (loading) {
         return <ProposalCardShimmer/>
     }
-    const { name, intro, rating, reviewCount, about, price, taskComplexity, testimonial, deliveryTime } = data
+    const { name, intro, rating, reviewCount, price, taskComplexity, testimonial, deliveryTime } = data
     const { text, author } = testimonial
 
 

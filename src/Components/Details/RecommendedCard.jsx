@@ -1,7 +1,7 @@
 import React from 'react'
 import DetailsPageIMG from "../../assets/detailPageImg.svg"
-import { SlCalender } from "react-icons/sl"
 import { AiFillStar } from "react-icons/ai"
+
 
 const RecommendedCard = () => {
     return (

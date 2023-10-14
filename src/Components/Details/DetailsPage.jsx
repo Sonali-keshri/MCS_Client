@@ -3,9 +3,7 @@ import Propasol from './Propasol'
 import RecommendedCard from "./RecommendedCard"
 
 
-
 const DetailsPage = () => {
-  
   return (
     <div className='max-w-[1536px]'>
         <Propasol />

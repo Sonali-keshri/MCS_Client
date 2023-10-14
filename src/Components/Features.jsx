@@ -1,6 +1,5 @@
 import React from 'react'
 import featureImg from "../assets/featureImg.svg"
-
 import hat from "../assets/hat.png"
 import report from "../assets/report.png"
 import search from "../assets/search.png"

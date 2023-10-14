@@ -7,7 +7,7 @@ import { useContext } from 'react';
 
 const Cards = () => {
 
-    const { searchTerm, setSearchTerm, data, loading } = useContext(MyContext)
+    const { data, loading } = useContext(MyContext)
 
     return (
         <div className='max-w-[1536px] md:p-20 p-10 joinPage '>
