@@ -7,7 +7,7 @@ import { useContext } from 'react';
 
 const Cards = () => {
 
-    const { data, loading } = useContext(MyContext)
+    const { rawData,data, loading } = useContext(MyContext)
 
     return (
         <div className='max-w-[1536px] md:p-20 p-10 joinPage '>
@@ -20,7 +20,7 @@ const Cards = () => {
                     {loading ? (
                         <ShimmerCard />
                     ) : (
-                        data?.map((item) => {
+                        rawData?.map((item) => {
                             return (
                                 <Link to={`/detail/${item.id}`} key={item.id}><CardBody item={item} /></Link>
                             )
